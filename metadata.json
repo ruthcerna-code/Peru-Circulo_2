@@ -1,0 +1,6 @@
+{
+  "name": "CAD Perú - Círculo de Apoyo ante el Duelo",
+  "description": "Red de familias y acompañamiento ante el duelo gestacional, perinatal y neonatal en el Perú. No estás sola, no estás solo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
