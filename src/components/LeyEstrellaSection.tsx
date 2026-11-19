@@ -26,7 +26,7 @@ export const LeyEstrellaSection: React.FC<LeyEstrellaSectionProps> = ({ onOpenMo
           </h2>
 
           <p className="text-lg text-white/90 leading-relaxed mb-5">
-            El Perú cuenta con una ley que promueve el cuidado integral y multidisciplinario de la madre ante la muerte y el duelo gestacional y neonatal. Nació gracias al impulso de familias en duelo, y nosotras fuimos parte de ese camino.
+            El PAIS cuenta con una ley que promueve el cuidado integral y multidisciplinario de la madre ante la muerte y el duelo gestacional y neonatal. Nació gracias al impulso de familias en duelo, y nosotras fuimos parte de ese camino.
           </p>
 
           <p className="text-lg text-white/90 leading-relaxed mb-8">
@@ -66,7 +66,7 @@ export const LeyEstrellaSection: React.FC<LeyEstrellaSectionProps> = ({ onOpenMo
                   15 de octubre
                 </strong>
                 <p className="text-white/80 text-base leading-relaxed">
-                  Día Nacional de la Concientización sobre la Muerte Gestacional y Neonatal en todo el territorio peruano.
+                  Día Nacional de la Concientización sobre la Muerte Gestacional y Neonatal en todo el territorio PAIS.
                 </p>
               </div>
             </div>

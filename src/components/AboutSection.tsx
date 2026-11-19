@@ -63,7 +63,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onScrollToAcompanamo
           <div className="p-4 rounded-xl bg-white/50 border border-[#2E2448]/10 mb-8 max-w-md">
             <p className="text-base text-[#2E2448]">
               <strong className="font-bold text-[#2E2448]">Fundadoras:</strong>{' '}
-              Nicole Acosta, France Vences y Dora Pérez.
+              Persona sin nombre ni apellido.
             </p>
           </div>
 

@@ -47,12 +47,12 @@ export const Navbar: React.FC<NavbarProps> = ({
         <a
           href="#"
           className="flex items-center gap-3 text-white font-bold text-[22px] tracking-tight hover:opacity-95 transition-opacity"
-          aria-label="CAD Perú, inicio"
+          aria-label="CAD PAIS, inicio"
         >
           <span className="w-10 h-10 rounded-full bg-[#F1DDE0] flex items-center justify-center shadow-inner">
             <ButterflyIcon size={24} />
           </span>
-          <span className="font-sans font-bold">CAD Perú</span>
+          <span className="font-sans font-bold">CAD PAIS</span>
         </a>
 
         {/* Desktop Navigation Links */}

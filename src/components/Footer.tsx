@@ -11,10 +11,10 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-5">
             <h4 className="font-serif-display font-medium text-2xl text-white mb-4 flex items-center gap-2">
               <span aria-hidden="true">💜</span>
-              <span>CAD Perú</span>
+              <span>CAD PAIS</span>
             </h4>
             <p className="text-white/80 leading-relaxed text-base mb-4 max-w-sm">
-              Círculo de Apoyo ante el Duelo. Red de apoyo y contención ante el duelo gestacional, perinatal, neonatal e infancia temprana en el Perú.
+              Círculo de Apoyo ante el Duelo. Red de apoyo y contención ante el duelo gestacional, perinatal, neonatal e infancia temprana en el PAIS.
             </p>
             <p className="text-sm text-white/60">
               Espacio fundado por madres en duelo para acompañar a otras familias en su camino de reconstrucción y amor.
@@ -114,7 +114,7 @@ export const Footer: React.FC = () => {
 
         {/* Legal & copyright */}
         <div className="border-t border-white/20 pt-6 text-sm text-white/80 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <span>© 2026 Círculo de Apoyo ante el Duelo – CAD Perú</span>
+          <span>© 2026 Círculo de Apoyo ante el Duelo – CAD PAIS</span>
           <span className="flex items-center gap-2">
             <span>Hecho con amor, en memoria de nuestros bebés</span>
             <span aria-hidden="true">🦋</span>

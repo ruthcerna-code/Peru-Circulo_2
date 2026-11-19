@@ -40,7 +40,7 @@ export const Modals: React.FC<ModalsProps> = ({ activeModal, onClose, onTributeA
               <ButterflyIcon size={20} />
             </span>
             <span className="font-serif-display font-medium text-lg tracking-wide">
-              CAD Perú
+              CAD PAIS
             </span>
           </div>
 
@@ -138,7 +138,7 @@ const FirstStepsContent: React.FC<{ onClose: () => void }> = () => {
           <div className="text-sm">
             <strong className="block text-[#2E2448]">Estamos para sostenerte</strong>
             <p className="text-[#2E2448]/85">
-              En CAD Perú no estarás sola. Cuando estés lista, te esperamos con los brazos abiertos en nuestro grupo de mamás y papás.
+              En CAD PAIS no estarás sola. Cuando estés lista, te esperamos con los brazos abiertos en nuestro grupo de mamás y papás.
             </p>
           </div>
         </div>
@@ -226,7 +226,7 @@ const JoinCircleContent: React.FC<{ onClose: () => void }> = () => {
               <input
                 required
                 type="text"
-                placeholder="Ej. Carmen / Daniel"
+                placeholder="Ej. Persona sin nombre ni apellido"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#2E2448]/20 focus:outline-none focus:ring-2 focus:ring-[#4A6FA5]"
@@ -267,7 +267,7 @@ const JoinCircleContent: React.FC<{ onClose: () => void }> = () => {
 
             <div>
               <label className="block font-semibold text-[#2E2448] mb-1">
-                Ciudad o departamento (Perú)
+                Ciudad o departamento (PAIS)
               </label>
               <input
                 type="text"
@@ -317,13 +317,13 @@ const LeyEstrellaContent: React.FC<{ onClose: () => void }> = () => {
     <div>
       <div className="mb-6">
         <span className="text-xs uppercase font-bold tracking-wider text-[#2E2448] bg-[#F2A07B] px-3 py-1 rounded-full">
-          Legislación Peruana Vigente
+          Legislación PAIS Vigente
         </span>
         <h3 className="font-serif-display text-2xl sm:text-3xl text-[#2E2448] font-normal mt-3">
           Ley N.° 32132 · Ley Estrella
         </h3>
         <p className="text-sm text-[#2E2448]/85 mt-2">
-          Ley que promueve el cuidado integral y multidisciplinario de la madre, padre y familia ante la muerte y duelo gestacional y neonatal en el Perú.
+          Ley que promueve el cuidado integral y multidisciplinario de la madre, padre y familia ante la muerte y duelo gestacional y neonatal en el PAIS.
         </p>
       </div>
 
@@ -369,7 +369,7 @@ const LeyEstrellaContent: React.FC<{ onClose: () => void }> = () => {
             5. Apoyo en salud mental y licencias
           </strong>
           <p className="text-xs leading-relaxed text-[#2E2448]/80">
-            Acompañamiento psicológico continuo e información sobre las licencias laborales de maternidad y paternidad estipuladas por la legislación peruana.
+            Acompañamiento psicológico continuo e información sobre las licencias laborales de maternidad y paternidad estipuladas por la legislación PAIS.
           </p>
         </div>
       </div>
@@ -508,7 +508,7 @@ const AddTributeContent: React.FC<{ onClose: () => void; onSuccess: () => void }
             <input
               required
               type="text"
-              placeholder="Ej. Mateo Andrés / Nuestra lucecita"
+              placeholder="Ej. Persona sin nombre ni apellido"
               value={babyName}
               onChange={(e) => setBabyName(e.target.value)}
               className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#2E2448]/20 focus:outline-none focus:ring-2 focus:ring-[#A893D1]"
@@ -550,7 +550,7 @@ const AddTributeContent: React.FC<{ onClose: () => void; onSuccess: () => void }
             </label>
             <input
               type="text"
-              placeholder="Ej. Mamá Valeria y Papá Roberto"
+              placeholder="Ej. Persona sin nombre ni apellido"
               value={parentsName}
               onChange={(e) => setParentsName(e.target.value)}
               className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#2E2448]/20 focus:outline-none focus:ring-2 focus:ring-[#A893D1]"
@@ -610,7 +610,7 @@ const MemoryBoxContent: React.FC<{ onClose: () => void }> = () => {
     <div>
       <div className="mb-6">
         <span className="text-xs uppercase font-bold tracking-wider text-[#D97A8E]">
-          Cajitas de Recuerdo · CAD Perú
+          Cajitas de Recuerdo · CAD PAIS
         </span>
         <h3 className="font-serif-display text-2xl sm:text-3xl text-[#2E2448] font-normal mt-1">
           Cajitas de Recuerdo <span aria-hidden="true">🦋🌸</span>
@@ -694,7 +694,7 @@ const ProfessionalsContent: React.FC<{ onClose: () => void }> = () => {
           Profesionales de la Salud
         </h3>
         <p className="text-sm text-[#2E2448]/80 mt-2">
-          Capacitaciones, charlas y talleres vivenciales para obstetras, ginecólogos, neonatólogos, enfermeras y personal de admisión en el Perú.
+          Capacitaciones, charlas y talleres vivenciales para obstetras, ginecólogos, neonatólogos, enfermeras y personal de admisión en el PAIS.
         </p>
       </div>
 
@@ -730,7 +730,7 @@ const ProfessionalsContent: React.FC<{ onClose: () => void }> = () => {
               <input
                 required
                 type="text"
-                placeholder="Ej. Dra. María Ramos - Jefa de Obstetricia"
+                placeholder="Ej. Persona sin nombre ni apellido"
                 className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#2E2448]/20 focus:outline-none focus:ring-2 focus:ring-[#4A6FA5]"
               />
             </div>
@@ -785,14 +785,14 @@ const DonateContent: React.FC<{ onClose: () => void }> = () => {
           Donaciones y Alianzas
         </h3>
         <p className="text-sm text-[#2E2448]/85 mt-2">
-          CAD Perú es una organización ciudadana sin fines de lucro. Tu apoyo permite elaborar cajitas de recuerdo, imprimir guías de derechos y sostener los grupos de contención gratuitos.
+          CAD PAIS es una organización ciudadana sin fines de lucro. Tu apoyo permite elaborar cajitas de recuerdo, imprimir guías de derechos y sostener los grupos de contención gratuitos.
         </p>
       </div>
 
       <div className="space-y-4 text-sm">
         <div className="bg-white/90 p-5 rounded-2xl border border-[#2E2448]/15">
           <h4 className="font-bold text-[#2E2448] text-base mb-3 flex items-center gap-2">
-            <span>Canales directos en Perú</span>
+            <span>Canales directos en PAIS</span>
           </h4>
           <div className="space-y-2.5 text-sm text-[#2E2448]">
             <div className="p-3 bg-[#F8EDE6] rounded-xl flex items-center justify-between">
@@ -800,7 +800,7 @@ const DonateContent: React.FC<{ onClose: () => void }> = () => {
                 <strong className="block text-xs uppercase text-[#D97A8E]">Yape / Plin</strong>
                 <span className="font-mono font-bold text-base">Disponible vía enlace oficial</span>
               </div>
-              <span className="text-xs text-[#2E2448]/70">Perú</span>
+              <span className="text-xs text-[#2E2448]/70">PAIS</span>
             </div>
 
             <div className="p-3 bg-[#F8EDE6] rounded-xl flex items-center justify-between">
