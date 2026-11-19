@@ -5,12 +5,19 @@ import { ActiveModal } from '../types';
 
 interface NavbarProps {
   onOpenModal: (modal: ActiveModal) => void;
+  editingActivities: boolean;
+  onToggleActivitiesEdit: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
+export const Navbar: React.FC<NavbarProps> = ({
+  onOpenModal,
+  editingActivities,
+  onToggleActivitiesEdit,
+}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
+    { label: 'Actividades', href: '#actividades' },
     { label: 'Quiénes somos', href: '#quienes' },
     { label: 'Cómo acompañamos', href: '#acompanamos' },
     { label: 'Tus derechos', href: '#derechos' },
@@ -66,7 +73,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
         </nav>
 
         {/* Actions */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={onToggleActivitiesEdit}
+            aria-pressed={editingActivities}
+            className={`inline-flex items-center px-4 py-2 rounded-full font-semibold text-[14px] border cursor-pointer transition-all ${
+              editingActivities
+                ? 'bg-white text-[#2E2448] border-white'
+                : 'bg-transparent text-white border-white/40 hover:border-white'
+            }`}
+          >
+            Cambio
+          </button>
           <button
             onClick={() => onOpenModal('donate')}
             className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full font-semibold text-[15px] bg-[#F2A07B] text-[#2E2448] hover:brightness-105 hover:-translate-y-0.5 transition-all shadow-sm cursor-pointer"
@@ -106,6 +125,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
               </a>
             ))}
             <div className="pt-2 flex flex-col gap-2.5">
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onToggleActivitiesEdit();
+                }}
+                className="w-full py-3 px-4 rounded-full border border-white/30 text-white text-center font-semibold text-sm"
+              >
+                {editingActivities ? 'Cerrar cambio' : 'Cambio'}
+              </button>
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);

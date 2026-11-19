@@ -3,9 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { ActivitiesSection } from './components/ActivitiesSection';
 import { HelpCards } from './components/HelpCards';
 import { AboutSection } from './components/AboutSection';
 import { JoinOptions } from './components/JoinOptions';
@@ -16,11 +17,18 @@ import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
 import { FloatingButton } from './components/FloatingButton';
 import { Modals } from './components/Modals';
-import { ActiveModal } from './types';
+import { ActiveModal, Activity } from './types';
+import { ACTIVITIES_STORAGE_KEY, loadActivities } from './data/activitiesData';
 
 export default function App() {
   const [activeModal, setActiveModal] = useState<ActiveModal>(null);
   const [tributesTrigger, setTributesTrigger] = useState(0);
+  const [editingActivities, setEditingActivities] = useState(false);
+  const [activities, setActivities] = useState<Activity[]>(() => loadActivities());
+
+  useEffect(() => {
+    localStorage.setItem(ACTIVITIES_STORAGE_KEY, JSON.stringify(activities));
+  }, [activities]);
 
   const handleOpenModal = (modal: ActiveModal) => {
     setActiveModal(modal);
@@ -75,11 +83,26 @@ export default function App() {
       </svg>
 
       {/* Top Header & Navigation */}
-      <Navbar onOpenModal={handleOpenModal} />
+      <Navbar
+        onOpenModal={handleOpenModal}
+        editingActivities={editingActivities}
+        onToggleActivitiesEdit={() => {
+          setEditingActivities((current) => !current);
+          if (!editingActivities) {
+            handleScrollToSection('#actividades');
+          }
+        }}
+      />
 
       <main className="flex-1">
         {/* Hero Section with Butterfly & Contact Stripe */}
         <Hero onOpenModal={handleOpenModal} />
+
+        <ActivitiesSection
+          activities={activities}
+          editing={editingActivities}
+          onChange={setActivities}
+        />
 
         {/* Tarjetas de Ayuda: ¿Qué necesitas? */}
         <HelpCards onOpenModal={handleOpenModal} />

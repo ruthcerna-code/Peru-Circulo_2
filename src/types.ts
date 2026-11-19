@@ -1,3 +1,10 @@
+export interface Activity {
+  id: string;
+  title: string;
+  summary: string;
+  publishedAt: string;
+}
+
 export interface Tribute {
   id: string;
   babyName: string;
