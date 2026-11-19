@@ -27,7 +27,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#2E2448] text-white shadow-sm border-b border-white/10 transition-all">
+    <header className="sticky top-0 z-50 shadow-sm transition-all">
+      <div
+        className="bg-[#F2A07B] text-[#2E2448] text-center text-[13px] sm:text-sm font-semibold tracking-wide py-1.5 px-4"
+        role="status"
+      >
+        NO ES UN SITIO OFICIAL · DEMO
+      </div>
+      <div className="bg-[#2E2448] text-white border-b border-white/10">
       <div className="max-w-[1200px] mx-auto px-6 h-[72px] flex items-center justify-between">
         {/* Brand */}
         <a
@@ -123,6 +130,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
           </nav>
         </div>
       )}
+      </div>
     </header>
   );
 };
